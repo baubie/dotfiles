@@ -144,7 +144,7 @@
         [tag] name = "five"  [/tag]
         [tag] name = "six"   [/tag]
         [tag] name = "seven" [/tag]
-        [tag] name = "eight" [/tag]
+        [tag] name = "Web" [/tag]
         [tag] name = "IM"  [/tag]
 [/tags]
 
@@ -220,6 +220,15 @@
                screen   = 0          # Screen to use
                tag      = 9          # Tag number of apps
                free     = true       # Set automatic free client
+               max      = false      # Set automatic maximized client
+       [/rule]
+       [rule]
+               instance = "chromium-browser"       # First part of WM_CLASS
+               class    = "Chromium-browser"  # Seconf part of WM_CLASS, not needed if first part is correct
+               # role = ""           # WM_WINDOW_ROLE
+               screen   = 0          # Screen to use
+               tag      = 8          # Tag number of apps
+               free     = false       # Set automatic free client
                max      = false      # Set automatic maximized client
        [/rule]
        [rule]
