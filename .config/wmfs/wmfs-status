@@ -1,0 +1,3 @@
+SXL=`curl -s 'http://download.finance.yahoo.com/d/quotes.csv?s=sxl.v&f=l1' | tr -d '\r'`
+d=`date +"%l:%M %P"`
+wmfs -s "| SXL: \$$SXL | $d"
